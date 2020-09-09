@@ -34,11 +34,11 @@ func (t tick) average() float64 {
 }
 
 func (t tick) bestBidPrice() float64 {
-	return t.Result.Data.BestBidPrice
+	return (t.Result.Data.BestBidPrice - (t.Result.Data.BestBidPrice * 2 / 100))
 }
 
 func (t tick) bestAskPrice() float64 {
-	return t.Result.Data.BestAskPrice
+	return (t.Result.Data.BestAskPrice + (t.Result.Data.BestAskPrice * 2 / 100))
 }
 
 func getTick(from string, to string) *tick {
