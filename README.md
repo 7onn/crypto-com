@@ -1,4 +1,10 @@
 # crypto_com
+```bash
+cp .env.example .env
+```
+
+fill the values according the API authentication created in [crypto.com exchange](https://crypto.com/exchange/personal/api-management)
+
 
 ## TL;DR;
 ```bash
