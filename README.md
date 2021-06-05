@@ -8,14 +8,14 @@ fill the values according the API authentication created in [crypto.com exchange
 
 ## TL;DR;
 ```bash
-dep ensure && \
+go mod vendor && \
     go build -o bid src/* && \
     ./bid 0.001
 ```
 
 ## Build
 ```bash
-dep ensure # fetching dependencies
+go mod download # fetching dependencies
 go build -o bid src/* # build the src content into an executable called 'bid'
 ./bid 0.001 # runs the executable with the desired BTC amount to buy at average price
 ```
@@ -38,4 +38,3 @@ ideally it runs every 2 hours
 - BTC: 18GLPePTDMxPxwuFaFHhVNGZXihsNuYhK5
 - ETH: 0x8df8b0c99184d9305018f5d45c13437922d4f9d3
 - USDT: 0x8df8b0c99184d9305018f5d45c13437922d4f9d3
-
